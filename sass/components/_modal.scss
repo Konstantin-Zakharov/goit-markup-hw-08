@@ -1,0 +1,233 @@
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+
+  background-color: #ffffff;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0;
+
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    fill: var(--accent-color);
+  }
+}
+
+.modal__close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal__close-btn:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+
+
+.contact-form {
+  padding: 40px;
+}
+
+.contact-form__title {
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+}
+
+.contact-form__label {
+  display: block;
+}
+
+.contact-form__name {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--text-color);
+}
+
+.contact-form__wrapper {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.contact-form__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .contact-form__input:focus+& {
+    fill: var(--accent-color);
+  }
+}
+
+.contact-form__input {
+  display: block;
+  padding-left: 42px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+}
+
+.contact-form__label-message {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contact-form__message {
+  display: block;
+  padding: 12px 16px;
+  width: 448px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.contact-form-checkbox {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.policy-title {
+  margin-left: 36px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+.policy-title__link {
+  color: var(--accent-color);
+}
+
+.contact-form-checkbox__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+
+  /* appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+    position: absolute; */
+}
+
+.policy-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  height: 15px;
+  display: inline-block;
+
+  .contact-form-checkbox__input:checked+& {
+    background-image: url(../images/svg/icon-check.svg);
+    fill: var(--accent-color);
+  }
+
+  .contact-form-checkbox__input:focus+& {
+    outline: 1px solid;
+  }
+}
+
+.contact-form-btn {
+  display: block;
+  margin: auto;
+  min-width: 200px;
+  padding: 10px 52px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: #188CE8;
+  border-color: #188CE8;
+
+
+  font-family: var(--primary-font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: #ffffff;
+}
