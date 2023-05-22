@@ -1,11 +1,14 @@
     // ---480px---
     .advantages-container-icon {
-      width: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // width: 450px;
       height: 120px;
       background: #f5f4fa;
       border-radius: 4px;
       margin-bottom: 30px;
-      padding: 25px 192px;
+      // padding: 25px 192px;
     }
 
     .advantages__subtitle {

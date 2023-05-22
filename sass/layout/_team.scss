@@ -21,11 +21,15 @@
   }
 }
 
+.team__img {
+  max-width: 100%;
+}
+
 .container-team {
   padding-top: 30px;
   padding-bottom: 24px;
-  padding-left: 122px;
-  padding-right: 122px;
+  // padding-left: 122px;
+  // padding-right: 122px;
 }
 
 .team__name {
@@ -51,7 +55,11 @@
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-list-link {
