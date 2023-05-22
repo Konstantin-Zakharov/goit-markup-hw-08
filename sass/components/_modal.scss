@@ -224,6 +224,14 @@
   color: #ffffff;
 }
 
+// ---768px---
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 60%;
+  }
+}
+
+
 // ---1200px---
 @media screen and (min-width: 1200px) {
   .modal {
