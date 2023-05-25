@@ -224,6 +224,26 @@
   color: #ffffff;
 }
 
+// ---0-479px---
+@media screen and (max-width: 479px) {
+  .modal {
+    height: 95vh;
+  }
+
+  .contact-form__title {
+    font-size: 12px;
+  }
+
+  .policy-title {
+    font-size: 8px;
+  }
+
+  .policy-icon {
+    transform: translateY(-90%);
+    height: 10px;
+  }
+}
+
 // ---768px---
 @media screen and (min-width: 768px) {
   .modal {
