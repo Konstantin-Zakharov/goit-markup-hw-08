@@ -1192,7 +1192,6 @@ img {
 @media screen and (max-width: 479px) {
   .out-work__overlay {
     font-size: 12px;
-    padding: 40px 15px;
   }
 }
 @media screen and (min-width: 768px) {
