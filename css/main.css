@@ -207,11 +207,11 @@ img {
 }
 
 .mobile-nav-list__item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .mobile-navigation {
-  margin-bottom: 306px;
+  margin-bottom: 300px;
 }
 
 .mobile-header__contacts-link {
@@ -229,11 +229,11 @@ img {
 }
 
 .mobile-header__contacts-item:not(:last-child) {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .mobile-header__contacts {
-  margin-bottom: 64px;
+  margin-bottom: 60px;
 }
 
 .mobile-social__link {
@@ -271,21 +271,22 @@ img {
 }
 
 @media screen and (max-width: 479px) {
+  .mobile-navigation {
+    margin-bottom: 200px;
+  }
   .mobile-nav-list__link {
     font-size: 25px;
   }
+  .mobile-header__contacts-link {
+    font-size: 15px;
+  }
+  .mobile-header__contacts-link.accent {
+    font-size: 20px;
+  }
+  .mobile-social__link {
+    font-size: 11px;
+  }
 }
-.mobile-header__contacts-link {
-  font-size: 15px;
-}
-.mobile-header__contacts-link.accent {
-  font-size: 20px;
-}
-
-.mobile-social__link {
-  font-size: 11px;
-}
-
 @media screen and (min-width: 768px) {
   .nav-list {
     display: block;
@@ -1490,13 +1491,50 @@ img {
   .contact-form__title {
     font-size: 12px;
   }
+  .contact-form__name {
+    font-size: 10px;
+  }
+  .contact-form__input {
+    padding-left: 30px;
+    height: 30px;
+  }
+  .contact-form__icon {
+    left: 10px;
+  }
+  .contact-form__label-message {
+    margin-bottom: 10px;
+  }
   .policy-title {
     font-size: 8px;
+  }
+  .contact-form__message {
+    padding: 10px 15px;
+    height: 100px;
+  }
+  .contact-form__message::-webkit-input-placeholder {
+    font-size: 10px;
+  }
+  .contact-form__message::-moz-placeholder {
+    font-size: 10px;
+  }
+  .contact-form__message:-ms-input-placeholder {
+    font-size: 10px;
+  }
+  .contact-form__message::-ms-input-placeholder {
+    font-size: 10px;
+  }
+  .contact-form__message::placeholder {
+    font-size: 10px;
   }
   .policy-icon {
     -webkit-transform: translateY(-90%);
             transform: translateY(-90%);
     height: 10px;
+  }
+  .contact-form-btn {
+    min-width: 200px;
+    padding: 10px 52px;
+    font-size: 14px;
   }
 }
 @media screen and (min-width: 768px) {

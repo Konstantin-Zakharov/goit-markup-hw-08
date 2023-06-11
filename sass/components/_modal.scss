@@ -234,13 +234,46 @@
     font-size: 12px;
   }
 
+  .contact-form__name {
+    font-size: 10px;
+  }
+
+  .contact-form__input {
+    padding-left: 30px;
+    height: 30px;
+  }
+
+  .contact-form__icon {
+    left: 10px;
+  }
+
+  .contact-form__label-message {
+    margin-bottom: 10px;
+}
+
   .policy-title {
     font-size: 8px;
   }
 
+  .contact-form__message {
+    padding: 10px 15px;
+    height: 100px;
+
+    &::placeholder {
+      font-size: 10px;
+    }
+}
+
   .policy-icon {
     transform: translateY(-90%);
     height: 10px;
+  }
+
+  .contact-form-btn {
+    min-width: 200px;
+    padding: 10px 52px;  
+  
+    font-size: 14px;
   }
 }
 
