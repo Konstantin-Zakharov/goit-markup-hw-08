@@ -1529,7 +1529,6 @@ img {
   .policy-icon {
     -webkit-transform: translateY(-90%);
             transform: translateY(-90%);
-    height: 10px;
   }
   .contact-form-btn {
     min-width: 200px;
